@@ -46,7 +46,7 @@ int compareTo(Fraction other);
 You will implement the `Fraction.java` interface in a class called `FractionClass.java`. `FractionClass.java` will need to implement: (1) all the methods in the `Fraction` interface; (2) the `compareTo()` method from the `Comparable` interface, as shown above; (3) a constructor f; and (4) a main method for testing your code.
 
 ### Unit testing
-
+check
 The `main()` method of `FractionClass.java` runs some *unit tests*, which you can use to determine whether you are doing things correctly. When you run your code and uncomment what is in the main method, you should see the output that is indicated in the comments to the right of each method call in the main method.
 
 You must provide **2 additional unit tests of the mathematical operations** using different fractions. Make your code look like the code provided for unit testing in `main()`. Specifically, in the comments, indicate what the expected output should be.
@@ -60,16 +60,12 @@ In the `FractionClass.java` file, I have provided some code for finding the leas
 
 Once your code works to your satisfaction, push `FractionClass.java` to your personal master repo on the GitHub Classroom site, as you have done for your previous problem sets. Use the commit message "READY FOR GRADING" so we know you are done. 
 
-As always, you can check to see if it worked by going to your account on GitHub and checking to see if it was updated and whether the files have changed in the way you expected. This is your responsibility.
-
 ---
 
 ## Important notes on grading
 
-1. The only acceptable way to submit is through GitHub. If you do not submit via GitHub, you will get a 0.
+1. The `FractionClass.java` file **must be in the `src` directory**. You will lose 2 points if the file is in the wrong directory. The best way to make sure it is in the right place is to never ever move it in the first place.
 
-2. The `FractionClass.java` file **must be in the `src` directory**. You will lose 2 points if the file is in the wrong directory. The best way to make sure it is in the right place is to never ever move them in the first place.
+2. Your code must compile. If a class does not compile, you will get a 0. If you are struggling and you aren't able to get in touch with me or the TAs, any TAs in the lab can help you compile your code. If it's 11:55pm, comment out the part of the code that is preventing compilation, and include an explanation of why you are commenting it out.
 
-3. Your code must compile. If a class does not compile, you will get a 0. If you are struggling and you aren't able to get in touch with me or the TAs, any TAs in the lab can help you compile your code.
-
-4. The TAs will review and run your code. Note that in addition to running your unit tests, they will try a few of their own. It's a good idea to do some error checking to avoid any surprises during grading.
+3. The TAs will review and run your code. Note that in addition to running your unit tests, they will try a few of their own. It's a good idea to do some error checking to avoid any surprises during grading.

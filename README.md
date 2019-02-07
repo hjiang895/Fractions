@@ -39,7 +39,14 @@ Above you see `T`, which is a *type variable*. The notation `Comparable<Fraction
 ```java
 int compareTo(Fraction other);
 ```
-**You do not need to modify the interface in any way. For this problem set, you are just implementing this interface.**
+
+An implementation of `compareTo()` should return 
+
+* a positive number if the calling object is larger than the argument object
+* a negative number if the calling object is smaller than the argument object
+* 0 if the calling object and the argument object are equal
+
+**Note: You do not need to modify the interface in any way. YOu just need to implement the interface, as descibed below and in the code for `FractionClass.java`.**
 
 ## The `FractionClass` implementation of the `Fraction` interface
 

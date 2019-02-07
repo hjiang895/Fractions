@@ -10,6 +10,8 @@ The methods you write will perform arithmetic operations with fractions just the
 
 ## The `Fraction` interface
 
+**Note: You do not need to modify the `Fraction` interface in any way. You just need to implement the interface, as descibed in the next section and in the code for `FractionClass.java`.**
+
 The Java interface you will be implementing has the following specification:
 
 ```java
@@ -40,20 +42,19 @@ Above you see `T`, which is a *type variable*. The notation `Comparable<Fraction
 int compareTo(Fraction other);
 ```
 
-An implementation of `compareTo()` should return 
+An implementation of `compareTo()` should return: 
 
 * a positive number if the calling object is larger than the argument object
 * a negative number if the calling object is smaller than the argument object
 * 0 if the calling object and the argument object are equal
 
-**Note: You do not need to modify the interface in any way. YOu just need to implement the interface, as descibed below and in the code for `FractionClass.java`.**
+**Note: You do not need to modify the interface in any way. You just need to implement the interface, as descibed below and in the code for `FractionClass.java`.**
 
 ## The `FractionClass` implementation of the `Fraction` interface
 
 You will implement the `Fraction.java` interface in a class called `FractionClass.java`. `FractionClass.java` will need to implement: (1) all the methods in the `Fraction` interface; (2) the `compareTo()` method from the `Comparable` interface, as shown above; (3) a constructor f; and (4) a main method for testing your code.
 
 ### Unit testing
-check
 The `main()` method of `FractionClass.java` runs some *unit tests*, which you can use to determine whether you are doing things correctly. When you run your code and uncomment what is in the main method, you should see the output that is indicated in the comments to the right of each method call in the main method.
 
 You must provide **2 additional unit tests of the mathematical operations** using different fractions. Make your code look like the code provided for unit testing in `main()`. Specifically, in the comments, indicate what the expected output should be.
@@ -73,6 +74,6 @@ Once your code works to your satisfaction, push `FractionClass.java` to your per
 
 1. The `FractionClass.java` file **must be in the `src` directory**. You will lose 2 points if the file is in the wrong directory. The best way to make sure it is in the right place is to never ever move it in the first place.
 
-2. Your code must compile. If a class does not compile, you will get a 0. If you are struggling and you aren't able to get in touch with me or the TAs, any TAs in the lab can help you compile your code. If it's 11:55pm, comment out the part of the code that is preventing compilation, and include an explanation of why you are commenting it out.
+2. Your code must compile. If a class does not compile, you will get a 0. If you are struggling and you aren't able to get in touch with me or the TAs, any TAs in the lab can help you compile your code. If it's 11:55pm on the day it's due and you don't want to take the late penalty, comment out the part of the code that is preventing compilation, and include an explanation of why you are commenting it out.
 
 3. The TAs will review and run your code. Note that in addition to running your unit tests, they will try a few of their own. It's a good idea to do some error checking to avoid any surprises during grading.

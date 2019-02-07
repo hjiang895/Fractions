@@ -49,7 +49,7 @@ You will implement the `Fraction.java` interface in a class called `FractionClas
 
 The `main()` method of `FractionClass.java` runs some *unit tests*, which you can use to determine whether you are doing things correctly. When you run your code and uncomment what is in the main method, you should see the output that is indicated in the comments to the right of each method call in the main method.
 
-You must provide **2 additional unit tests of the mathematical operations** using different rational numbers. Make your code look like the code provided for unit testing in `main()`. Specifically, in the comments, indicate what the expected output should be.
+You must provide **2 additional unit tests of the mathematical operations** using different fractions. Make your code look like the code provided for unit testing in `main()`. Specifically, in the comments, indicate what the expected output should be.
 
 ### Helper code
 In the `FractionClass.java` file, I have provided some code for finding the least common multiple (`lcm`) and greatest common divisor (`gcd`), which you may find helpful.

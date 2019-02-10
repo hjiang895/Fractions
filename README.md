@@ -1,5 +1,5 @@
 # Problem Set 5
-## Due Thursday, February 14 at 11:59pm
+## Due Thursday, February 21 at 11:59pm
 ---
 
 For this problem set, you will be implementing an interface. You will also get the opportunity to write your own `compareTo()` method, to work with for loops, to learn about polymorphism, and to practice writing a constructor.

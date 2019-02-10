@@ -28,7 +28,24 @@ public interface Fraction extends Comparable<Fraction> {
 }
 ```
 
-The notation `extends Comparable<Fraction>` means that an implementation of the `Fraction` interface requires everything listed expicitly in the interface **and also** whatever is specified in the `Comparable` interface. The `Comparable` interface is an important built-in interface from `java.lang` which has one method:
+This is a new kind of interface for us because it extends another interface! The notation `extends Comparable<Fraction>` means that an implementation of the `Fraction` interface requires everything listed expicitly in the `Fraction` interface **plus** whatever is specified in the `Comparable` interface. More on this below! 
+
+**Note: You do not need to modify the interface in any way. You just need to implement the interface, as descibed below and in the code for `FractionClass.java`.**
+
+## The `FractionClass` implementation of the `Fraction` interface
+
+You will implement the `Fraction.java` interface in a class called `FractionClass.java`. `FractionClass.java` will need to implement: (1) all the methods in the `Fraction` interface; (2) the `compareTo()` method from the `Comparable` interface, as shown above; (3) a constructor; and (4) a main method for testing your code.
+
+### Methods in the `Fraction` interface
+Most of these methods are perform arithmetic on fractions. You'll need to reduce the result of each operation to its lowest terms. I've given a few methods in the code that you are free to use. A few things to remember: 
+
+* Do not change the method declarations (return type, method name, parameters) at all when you implement them. You'll note that many of them return a `Fraction`. That is okay! This is what polymorphism is all about.
+* There should be no decimals at any time.
+* If you have a denominator with a 0, return `null`. You don't need to throw an exception.
+
+### The `compareTo()` method
+
+The `Comparable` interface is an important built-in interface from `java.lang` which has one method:
 
 ```java
 public interface Comparable<T> {
@@ -36,10 +53,12 @@ public interface Comparable<T> {
 }
 ```
 
-Above you see `T`, which is a *type variable*. The notation `Comparable<Fraction>` should be understood as plugging in the type `Fraction` for the type variable `T` in the above. The result of that substitution in your code will be:
+We've talked a little bit about the `<T>` notation in class. Since the `Fraction` interface says `Comparable<Fraction>`, that means that when we write our implementation of `compareTo()`, we substitute in `Fraction` for `T `. Thus, when you write your `compareTo()` method in your `FractionClass.java` file, the method will look like this:
 
 ```java
-int compareTo(Fraction other);
+int compareTo(Fraction other) {
+  // blah blah blah
+}
 ```
 
 An implementation of `compareTo()` should return: 
@@ -48,13 +67,10 @@ An implementation of `compareTo()` should return:
 * a negative number if the calling object is smaller than the argument object
 * 0 if the calling object and the argument object are equal
 
-**Note: You do not need to modify the interface in any way. You just need to implement the interface, as descibed below and in the code for `FractionClass.java`.**
+### The `FractionClass` constructor
+Use the constructor to set the `numerator` and `denominator` instance variables.
 
-## The `FractionClass` implementation of the `Fraction` interface
-
-You will implement the `Fraction.java` interface in a class called `FractionClass.java`. `FractionClass.java` will need to implement: (1) all the methods in the `Fraction` interface; (2) the `compareTo()` method from the `Comparable` interface, as shown above; (3) a constructor f; and (4) a main method for testing your code.
-
-### Unit testing
+### Unit testing in `main()`
 The `main()` method of `FractionClass.java` runs some *unit tests*, which you can use to determine whether you are doing things correctly. When you run your code and uncomment what is in the main method, you should see the output that is indicated in the comments to the right of each method call in the main method.
 
 You must provide **2 additional unit tests of the mathematical operations** using different fractions. Make your code look like the code provided for unit testing in `main()`. Specifically, in the comments, indicate what the expected output should be.

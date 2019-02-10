@@ -37,7 +37,7 @@ This is a new kind of interface for us because it extends another interface! The
 You will implement the `Fraction.java` interface in a class called `FractionClass.java`. `FractionClass.java` will need to implement: (1) all the methods in the `Fraction` interface; (2) the `compareTo()` method from the `Comparable` interface; (3) a constructor; and (4) a main method for testing your code.
 
 ### 1. Methods in the `Fraction` interface
-Most of these methods are perform arithmetic on fractions. You'll need to reduce the result of each operation to its lowest terms. I have provided some code for finding the least common multiple (`lcm`) and greatest common divisor (`gcd`), which you may find helpful. A few things to remember: 
+Most of these methods perform some kind of arithmetic on fractions. You'll need to reduce the result of each operation to its lowest terms. I have provided some code for finding the least common multiple (`lcm`) and greatest common divisor (`gcd`), which you may find helpful. A few things to remember: 
 
 * Do not change the method declarations (return type, method name, parameters) at all when you implement them. You'll note that many of them return a `Fraction`. That is okay! This is what polymorphism is all about.
 * There should be no decimals at any time.

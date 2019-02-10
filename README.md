@@ -36,14 +36,14 @@ This is a new kind of interface for us because it extends another interface! The
 
 You will implement the `Fraction.java` interface in a class called `FractionClass.java`. `FractionClass.java` will need to implement: (1) all the methods in the `Fraction` interface; (2) the `compareTo()` method from the `Comparable` interface, as shown above; (3) a constructor; and (4) a main method for testing your code.
 
-### Methods in the `Fraction` interface
-Most of these methods are perform arithmetic on fractions. You'll need to reduce the result of each operation to its lowest terms. I've given a few methods in the code that you are free to use. A few things to remember: 
+### 1. Methods in the `Fraction` interface
+Most of these methods are perform arithmetic on fractions. You'll need to reduce the result of each operation to its lowest terms. I have provided some code for finding the least common multiple (`lcm`) and greatest common divisor (`gcd`), which you may find helpful. A few things to remember: 
 
 * Do not change the method declarations (return type, method name, parameters) at all when you implement them. You'll note that many of them return a `Fraction`. That is okay! This is what polymorphism is all about.
 * There should be no decimals at any time.
 * If you have a denominator with a 0, return `null`. You don't need to throw an exception.
 
-### The `compareTo()` method
+### 2. The `compareTo()` method
 
 The `Comparable` interface is an important built-in interface from `java.lang` which has one method:
 
@@ -67,16 +67,13 @@ An implementation of `compareTo()` should return:
 * a negative number if the calling object is smaller than the argument object
 * 0 if the calling object and the argument object are equal
 
-### The `FractionClass` constructor
+### 3. The `FractionClass` constructor
 Use the constructor to set the `numerator` and `denominator` instance variables.
 
-### Unit testing in `main()`
-The `main()` method of `FractionClass.java` runs some *unit tests*, which you can use to determine whether you are doing things correctly. When you run your code and uncomment what is in the main method, you should see the output that is indicated in the comments to the right of each method call in the main method.
+### 4. Unit testing in `main()`
+The `main()` method of `FractionClass.java` runs some *unit tests*, which help you determine whether you are doing things correctly. When you run your code and uncomment what is in the main method, you should see the output that is indicated in the comments to the right of each method call in the main method.
 
 You must provide **2 additional unit tests of the mathematical operations** using different fractions. Make your code look like the code provided for unit testing in `main()`. Specifically, in the comments, indicate what the expected output should be.
-
-### Helper code
-In the `FractionClass.java` file, I have provided some code for finding the least common multiple (`lcm`) and greatest common divisor (`gcd`), which you may find helpful.
 
 ---
 

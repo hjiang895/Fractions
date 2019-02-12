@@ -7,7 +7,7 @@ public class FractionClass implements Fraction {
   /* INSTANCE VARIABLES */
   // Create long type instance variables for the numerator and denominator
 
-  /* INSTANCE VARIABLES */
+  /* CONSTRUCTOR */
   // Implement the constructor to initialize the instance variables.
 
   /* FRACTION INTERFACE METHODS */

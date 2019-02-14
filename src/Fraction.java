@@ -2,8 +2,8 @@
 // rational numbers as fractions.
 
 public interface Fraction extends Comparable<Fraction> {
-  int getNumerator();
-  int getDenominator();
+  long getNumerator();
+  long getDenominator();
   Fraction plus(Fraction b);
   Fraction subtract(Fraction b);
   Fraction multiply(Fraction b);
